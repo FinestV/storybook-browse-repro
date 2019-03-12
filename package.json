@@ -1,0 +1,23 @@
+{
+  "name": "storybook-browse-repro",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/react": "^5.0.1",
+    "@types/storybook__react": "^4.0.1",
+    "babel-loader": "^8.0.5",
+    "http-server": "^0.11.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "serve": "^10.1.2",
+    "webpack": "^4.29.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "httpserver": "http-server .out -p 9010",
+    "serve": "serve .out -p 9011"
+  }
+}
